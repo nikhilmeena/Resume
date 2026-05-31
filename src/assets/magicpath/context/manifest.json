@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-31T12:58:57.489Z",
+  "usage": "Read-only local copies of images supplied by the user, chat, or selected canvas. Import these files from TSX/CSS instead of using temporary source URLs.",
+  "assets": [
+    {
+      "id": "contextImage1",
+      "source": "context_image",
+      "shapeIds": [],
+      "display": "Context image 1",
+      "path": "src/assets/magicpath/context/01-context-image-1-9af763494f65.png",
+      "importPath": "@/assets/magicpath/context/01-context-image-1-9af763494f65.png",
+      "sizeBytes": 644788
+    },
+    {
+      "id": "contextImage2",
+      "source": "context_image",
+      "shapeIds": [],
+      "display": "Context image 2",
+      "path": "src/assets/magicpath/context/02-context-image-2-45b3960758bd.png",
+      "importPath": "@/assets/magicpath/context/02-context-image-2-45b3960758bd.png",
+      "sizeBytes": 542763
+    },
+    {
+      "id": "contextImage3",
+      "source": "context_image",
+      "shapeIds": [],
+      "display": "Context image 3",
+      "path": "src/assets/magicpath/context/03-context-image-3-6ff75761621e.png",
+      "importPath": "@/assets/magicpath/context/03-context-image-3-6ff75761621e.png",
+      "sizeBytes": 291303
+    },
+    {
+      "id": "contextImage5",
+      "source": "context_image",
+      "shapeIds": [],
+      "display": "Context image 5",
+      "path": "src/assets/magicpath/context/05-context-image-5-364b3da9cf80.png",
+      "importPath": "@/assets/magicpath/context/05-context-image-5-364b3da9cf80.png",
+      "sizeBytes": 238054
+    }
+  ],
+  "pruned_at": "2026-05-31T13:33:47.307Z"
+}

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, MapPin, Mail, ExternalLink, Phone } from "lucide-react";
+import { MapPin, Mail, ExternalLink, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Assets
@@ -132,6 +132,24 @@ const CONTACTS: ContactItem[] = [{
 }];
 
 // Sub-components
+const LinkedInIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    aria-hidden
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
 const Section = ({
   label,
   children,
@@ -207,10 +225,10 @@ export const Portfolio = () => {
                 Nikhil Kumar Meena
               </motion.h1>
               <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-[#888888] text-sm">
-                <div className="flex items-center gap-2">
-                  <Briefcase className="w-4 h-4" />
+                <a href="https://www.linkedin.com/in/nikhil-meena26" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 cursor-pointer hover:text-white transition-colors">
+                  <LinkedInIcon className="w-4 h-4" />
                   <span>Product Manager</span>
-                </div>
+                </a>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
                   <span>Hyderabad, India</span>

@@ -470,7 +470,7 @@ export const Portfolio = () => {
                     <span>{exp.period}</span>
                   </div>
                 </div>
-                <ul className="flex flex-col gap-2">- Led end-to-end product lifecycle for mobile banking application redesign impacting X million users<br />- Partnered with design teams to build user-centric UI/UX using Figma<br />- Defined PRDs, user stories, and acceptance criteria for multiple product features<br />- Collaborated with engineering to implement microservices architecture, improving system performance by 30%<br />- Conducted API testing using Postman; reduced the defect count from 300 to a single digit.<br />- Used JIRA to track and resolve issues, improving delivery timelines and sprint efficiency by 40%<br /><br /></ul>
+                <ul className="flex flex-col gap-2">- Led end-to-end product lifecycle for mobile banking application redesign impacting 10 million users<br />- Partnered with design teams to build user-centric UI/UX using Figma<br />- Defined PRDs, user stories, and acceptance criteria for multiple product features<br />- Collaborated with engineering to implement microservices architecture, improving system performance by 30%<br />- Conducted API testing using Postman; reduced the defect count from 300 to a single digit.<br />- Used JIRA to track and resolve issues, improving delivery timelines and sprint efficiency by 40%<br /><br /></ul>
               </motion.div>)}
           </div>
         </Section>

@@ -267,8 +267,13 @@ export const Portfolio = () => {
           </div>
         </Section>
 
-        {/* Projects / Workshop */}
-        <Section label="Projects">
+        {/* Experience / Projects */}
+        <Section label="Experience">
+          <div className="flex flex-col gap-1 mb-6">
+            <span className="text-[#888888] text-xs uppercase tracking-widest font-medium">PRODUCT MANAGER</span>
+            <h3 className="text-[#f0f0f0] text-2xl md:text-3xl font-bold">ICICI Bank Ltd</h3>
+            <p className="text-[#888888] text-sm">Hyderabad · July 2022 – Present</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {/* Featured workshop card */}
             <motion.div initial={{
@@ -280,25 +285,14 @@ export const Portfolio = () => {
           }} viewport={{
             once: true
           }} className="group cursor-pointer md:col-span-2">
-              <div className="relative aspect-[16/7] bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] border border-[#2a2a2a] rounded-2xl overflow-hidden mb-4 group-hover:border-[#444] transition-all duration-500 flex items-center justify-center" style={{
-              opacity: "0.5",
-              display: "",
-              minHeight: "",
-              height: "",
-              width: "",
-              maxWidth: ""
+              <div className="relative aspect-[6/1] max-h-[180px] bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] border border-[#2a2a2a] rounded-2xl overflow-hidden mb-4 group-hover:border-[#444] transition-all duration-500 flex items-center justify-center" style={{
+              opacity: "0.5"
             }}>
                 <div className="text-center px-8">
-                  <p className="text-[#888888] text-xs uppercase tracking-widest mb-3 font-medium">ICICI BANK LTD </p>
-                  <h3 className="text-[#f0f0f0] text-2xl md:text-3xl font-bold mb-3">UI/UX Design</h3>
-                  <p className="text-[#aaaaaa] text-base" style={{
-                  display: ""
-                }}>Send Money (Funds Transfer)</p>
+                  <h3 className="text-[#f0f0f0] text-3xl md:text-4xl font-bold">iMobile Pay Application</h3>
                 </div>
               </div>
               <div className="flex flex-col gap-2 max-w-2xl">
-                <h3 className="text-[#f0f0f0] font-bold text-lg">UI/UX Design </h3>
-                <p className="text-[#888888] text-sm leading-relaxed">Developed UI/UX for a funds transfer system by analysing VIMM loads and creating design strategies, user profiles, personas, scenarios, task flows, wireframes and prototypes using Figma.<br /></p>
               </div>
             </motion.div>
 
@@ -463,10 +457,6 @@ export const Portfolio = () => {
               </div>
             </motion.div>
           </div>
-        </Section>
-
-        {/* Experience */}
-        <Section label="Experience">
           <div className="flex flex-col gap-6">
             {EXPERIENCE.map(exp => <motion.div key={exp.id} initial={{
             opacity: 0,
@@ -477,19 +467,62 @@ export const Portfolio = () => {
           }} viewport={{
             once: true
           }} className="bg-[#1e1e1e] border border-[#2a2a2a] rounded-xl p-6 md:p-8 hover:border-[#444] transition-colors duration-300">
-                <div className="flex flex-col gap-1 mb-5">
-                  <span className="text-[#888888] text-xs uppercase tracking-wider font-medium">PRODUCT MANAGER</span>
-                  <h3 className="text-[#f0f0f0] text-xl md:text-2xl font-bold">
-                    {exp.company}
-                  </h3>
-                  <div className="flex items-center gap-3 text-[#888888] text-sm">
-                    <span>{exp.location}</span>
-                    <span className="w-1 h-1 rounded-full bg-[#555]" />
-                    <span>{exp.period}</span>
-                  </div>
-                </div>
-                <ul className="flex flex-col gap-2">- Led end-to-end product lifecycle for mobile banking application redesign impacting 10 million users<br />- Partnered with design teams to build user-centric UI/UX using Figma<br />- Defined PRDs, user stories, and acceptance criteria for multiple product features<br />- Collaborated with engineering to implement microservices architecture, improving system performance by 30%<br />- Conducted API testing using Postman; reduced the defect count from 300 to a single digit.<br />- Used JIRA to track and resolve issues, improving delivery timelines and sprint efficiency by 40%<br /><br /></ul>
+                <ul className="flex flex-col gap-2">- Led end-to-end product lifecycle for mobile banking application redesign impacting 10 million users<br />- Developed a funds transfer system by analysing VIMM loads and creating design strategies, user profiles, personas, scenarios, task flows, wireframes and prototypes using Figma<br />- Defined PRDs, user stories, and acceptance criteria for multiple product features<br />- Collaborated with engineering to implement microservices architecture, improving system performance by 30%<br />- Conducted API testing using Postman; reduced the defect count from 300 to a single digit.<br />- Used JIRA to track and resolve issues, improving delivery timelines and sprint efficiency by 40%<br /><br /></ul>
               </motion.div>)}
+          </div>
+        </Section>
+
+        {/* Agile Methodology */}
+        <Section label="Agile Methodology">
+          <div className="flex flex-col gap-4">
+            <p className="text-[#888888] text-lg leading-relaxed">
+              Experienced in Agile processes, sprint planning, backlog grooming, daily stand-ups, and cross-functional team collaboration.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-[#2a2a2a] bg-[#1b1b1f] p-5">
+                <p className="text-[#f0f0f0] font-semibold">Key Practices</p>
+                <ul className="list-disc list-inside text-[#888888] space-y-2 mt-3 text-sm">
+                  <li>Sprint planning & review</li>
+                  <li>Backlog management</li>
+                  <li>Retrospectives & continuous improvement</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-[#2a2a2a] bg-[#1b1b1f] p-5">
+                <p className="text-[#f0f0f0] font-semibold">Team Focus</p>
+                <ul className="list-disc list-inside text-[#888888] space-y-2 mt-3 text-sm">
+                  <li>Stakeholder alignment</li>
+                  <li>Cross-functional communication</li>
+                  <li>Outcome-driven delivery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        {/* DevOps */}
+        <Section label="DevOps">
+          <div className="flex flex-col gap-4">
+            <p className="text-[#888888] text-lg leading-relaxed">
+              Familiar with DevOps tooling and practices that support faster release cycles, automation, and operational reliability.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-[#2a2a2a] bg-[#1b1b1f] p-5">
+                <p className="text-[#f0f0f0] font-semibold">Tools</p>
+                <ul className="list-disc list-inside text-[#888888] space-y-2 mt-3 text-sm">
+                  <li>CI/CD pipelines</li>
+                  <li>Docker & containerization</li>
+                  <li>Monitoring & automation</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-[#2a2a2a] bg-[#1b1b1f] p-5">
+                <p className="text-[#f0f0f0] font-semibold">Practices</p>
+                <ul className="list-disc list-inside text-[#888888] space-y-2 mt-3 text-sm">
+                  <li>Infrastructure collaboration</li>
+                  <li>Release coordination</li>
+                  <li>Quality & stability focus</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </Section>
 
@@ -518,21 +551,7 @@ export const Portfolio = () => {
           </div>
         </Section>
 
-        {/* Awards */}
-        <Section label="Awards">
-          <div className="flex flex-col gap-2">
-            {AWARDS.map(award => <div key={award.id} className="flex items-center group py-4">
-                <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-4 flex-grow">
-                  <span className="text-[#f0f0f0] font-bold md:text-lg group-hover:translate-x-1 transition-transform duration-300">
-                    {award.title}
-                  </span>
-                  <span className="text-[#888888] text-sm md:text-base">{award.org}</span>
-                  {award.detail && <span className="text-[#555555] text-sm">{award.detail}</span>}
-                </div>
-                <div className="hidden md:block flex-grow mx-8 border-b border-[#2a2a2a] h-1 group-hover:border-[#444] transition-colors" />
-              </div>)}
-          </div>
-        </Section>
+        
 
         {/* Personal Interests */}
         <Section label="Interests">
